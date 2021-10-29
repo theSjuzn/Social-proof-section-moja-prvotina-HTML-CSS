@@ -1,0 +1,163 @@
+html,body {
+    font-size: 15px;
+    width: 100%;
+    height: auto;
+    font-family: 'Spartan', sans-serif;
+}
+
+.group {
+    max-width: 1440px;
+    height: auto;
+
+    font-family: 'Spartan', sans-serif;
+    font-size: 1em;
+
+    margin: 3em;
+    padding: 1em;
+
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* HEADER SECTION */
+.header-stars-box {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+}
+.header-section {
+    max-width: 50%;
+}
+
+.header-box {
+    position: relative;
+}
+.header-box h1{
+    color: hsl(300, 43%, 22%);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    max-width: 90%;
+
+    overflow-wrap: break-word;
+}
+.header-box p {
+    color:hsl(303, 10%, 53%);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+    max-width: 80%;
+    overflow-wrap: break-word;
+    position: relative;
+    top: -0.5em;
+}
+
+/* STARS SECTION */
+.stars-section {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+
+    position: relative;
+}
+
+.stars-box {
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    max-width: 100%;
+
+    background-color: hsl(300, 24%, 96%);
+
+    padding: 0.5em 3em;
+    border-radius: 0.4em;
+
+    position: relative;
+    
+}
+.stars-box:first-child{
+    top: -1em;
+    right: 7em;
+}
+
+.stars-box:nth-child(2){
+    right: 4em;
+}
+
+.stars-box:last-child{
+    margin-bottom: none;
+    top: 1em;
+    right: 1em;
+}
+
+
+.stars-box img {
+    max-width: 90%;
+    height: auto;
+    -webkit-font-smoothing: antialiased;
+
+    margin-right: 0.2em;
+    vertical-align:middle;
+
+    position: relative;
+    right: 1em;
+
+}
+
+.stars-box p{
+    position: relative;
+    top: 0.1em;
+}
+.stars-text {
+    color: hsl(300, 43%, 22%);
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em;
+    margin-left: 2em;
+    -webkit-font-smoothing: antialiased;
+
+    
+    
+}
+
+/* REVIEW SECTION */
+.reviews-section {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2em;
+}
+.review-box {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+
+    max-width: 33%;
+    height: auto;
+    flex: none;
+
+    margin-right: 0.5em;
+
+    background-color: hsl(300, 43%, 22%);
+}
+.review-box:last-child {
+    margin-right: none;
+}
+
+.review-box h3,
+.review-box p {
+    color: hsl(300, 24%, 96%);
+}
+.name, .buyer, .review {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1em;
+}
+
+.buyer {
+    color:hsl(333, 80%, 67%);
+}
