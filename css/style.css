@@ -1,21 +1,27 @@
 html,body {
     font-size: 15px;
-    width: 100%;
-    height: auto;
-    font-family: 'Spartan', sans-serif;
+    height: 100%;
+
+    background-color: hsl(0, 0%, 100%);
+   
+   
 }
 
-.group {
+.main {
     max-width: 1440px;
-    height: auto;
+    height: 100%;
 
     font-family: 'Spartan', sans-serif;
     font-size: 1em;
-
-    margin: 3em;
     padding: 1em;
 
-    background-color: hsl(0, 0%, 100%);
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+}
+
+.all-section {
+    margin: 4em;
 }
 
 /* HEADER SECTION */
@@ -53,7 +59,7 @@ html,body {
     max-width: 80%;
     overflow-wrap: break-word;
     position: relative;
-    top: -0.5em;
+    top: -1em;
 }
 
 /* STARS SECTION */
@@ -82,17 +88,17 @@ html,body {
 }
 .stars-box:first-child{
     top: -1em;
-    right: 7em;
+    right: 8em;
 }
 
 .stars-box:nth-child(2){
-    right: 4em;
+    right: 5em;
 }
 
 .stars-box:last-child{
     margin-bottom: none;
     top: 1em;
-    right: 1em;
+    right: 2em;
 }
 
 
@@ -130,34 +136,80 @@ html,body {
     display: flex;
     flex-direction: row;
 
+    max-width: 100%;
+    height: auto;
+
     margin-top: 2em;
+    position: relative;
 }
 .review-box {
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
     font-size: 1em;
+    border-radius: .8em;
+    margin-right: 2em;
 
-    max-width: 33%;
-    height: auto;
-    flex: none;
+    max-width: 100%;
+    height: 10em;
 
-    margin-right: 0.5em;
+    padding: 3em 2em 2em 2em;
 
     background-color: hsl(300, 43%, 22%);
+
+}
+
+.review-box:nth-child(2) {
+    position: relative;
+    top: 1em;
+
 }
 .review-box:last-child {
+    position: relative;
+    top: 2em;
     margin-right: none;
 }
 
+
+
+.review-img {
+    max-width: 13%;
+    height: auto;
+    border-radius: 3em;
+    
+
+    
+}
 .review-box h3,
 .review-box p {
     color: hsl(300, 24%, 96%);
 }
 .name, .buyer, .review {
     font-family: 'Spartan', sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
-.buyer {
+h3.name,
+h3.buyer {
+    position: relative;
+    top: -3.9em;
+    left: 5em;
+
+}
+
+h3.buyer {
     color:hsl(333, 80%, 67%);
+    font-weight: 400;
+    top: -4.7em;
+
+}
+
+p.review {
+    -webkit-font-smoothing: antialiased;
+    /* max-width: 90%; */
+    overflow-wrap: break-word;
+    font-size: 0.75;
+    line-height: 1.7;
+    position: relative;
+    top: -3.5em;
+
 }
